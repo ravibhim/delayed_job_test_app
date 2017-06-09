@@ -23,9 +23,12 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'delayed_job'
-gem 'delayed_job_web'
-gem 'delayed_job_active_record'
+gem 'delayed_job', '4.1.1'
+gem 'delayed_job_web', '1.2.10'
+gem 'delayed_job_active_record', '4.1.0'
+
+gem 'google-protobuf', '~> 3.0.2'
+gem 'grpc', '~> 0.13.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -44,6 +47,6 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  #gem 'spring'
 end
 
